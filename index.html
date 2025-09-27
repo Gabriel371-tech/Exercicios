@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Exercicios</title>
+</head>
+<body>
+<header class="bg-white shadow-md">
+  <div class="container mx-auto flex items-center justify-between p-4">
+    <!-- LOGO -->
+    <a href="#" class="text-2xl font-bold text-blue-600">MinhaLogo</a>
+
+    <!-- NAV (Desktop) -->
+    <nav class="hidden md:flex space-x-6">
+      <a href="#home" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+      <a href="#about" class="text-gray-700 hover:text-blue-600 transition">Sobre</a>
+      <a href="#services" class="text-gray-700 hover:text-blue-600 transition">Serviços</a>
+      <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contato</a>
+    </nav>
+
+    <!-- BOTÃO (Desktop) -->
+    <a href="#login" class="hidden md:inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+      Entrar
+    </a>
+
+    <!-- BOTÃO MENU (Mobile) -->
+    <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+      <!-- Ícone hamburguer -->
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- MENU MOBILE -->
+  <div id="mobile-menu" class="hidden md:hidden flex-col space-y-2 p-4 bg-white shadow-lg">
+    <a href="#home" class="block text-gray-700 hover:text-blue-600">Home</a>
+    <a href="#about" class="block text-gray-700 hover:text-blue-600">Sobre</a>
+    <a href="#services" class="block text-gray-700 hover:text-blue-600">Serviços</a>
+    <a href="#contact" class="block text-gray-700 hover:text-blue-600">Contato</a>
+    <a href="#login" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Entrar</a>
+  </div>
+</header>
+
+</body>
+</html>
